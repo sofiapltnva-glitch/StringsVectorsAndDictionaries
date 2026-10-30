@@ -1,9 +1,8 @@
-﻿﻿/****************************
+﻿/****************************
 * Платонова Софья           *
 * Строки, векторы и словари *
-* Вариант (A)               *
+* Вариант 22 (A)            *
 ****************************/
-
 
 #include <iostream>
 #include <string>
@@ -12,6 +11,8 @@ using namespace std;
 
 int main() {
   string imputUser, word, result;
+
+  cout << "Enter a string ";
 
   if (!getline(cin, imputUser) || imputUser.size() > 200) {
     cout << "INVALID";
@@ -39,7 +40,7 @@ int main() {
   if (result.empty()) {
     cout << "EMPTY";
   } else {
-    cout << result;
+    cout << "Result: " << result;
   }
 
   return 0;
